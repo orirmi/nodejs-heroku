@@ -4,7 +4,7 @@ nodejs-heroku
 1. create local repo with Procfile and package.json deps (npm init, git init/add/commit, ...)
 2. run 
 ```bash
-$ heroku init
+$ heroku apps:create myapp
 ```
 3. push to heroku
 ```bash
