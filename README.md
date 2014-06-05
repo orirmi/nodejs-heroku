@@ -1,16 +1,37 @@
 nodejs-heroku
 =============
 
-1. create local repo with Procfile and package.json deps (npm init, git init/add/commit, ...)
-2. run 
+
+create initial package.json
+```bash
+$ npm init
+```
+
+create procfile 
+```bash
+echo web: node index.js > Procfile
+```
+
+create local repo
+```bash
+$ git init
+```
+
+make initial commit
+```bash
+git add . && git commit -m "Initial commit"
+```
+
+create heroku app 
 ```bash
 $ heroku apps:create myapp
 ```
-3. push to heroku
+
+push to heroku
 ```bash
 $ git push heroku master
 ```
-4. add postgres addon
+add postgres addon
 ```bash
 $ heroku addons:add heroku-postgresql:dev
 ```
